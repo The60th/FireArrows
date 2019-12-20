@@ -1,9 +1,6 @@
 package main;
 
 import main.events.ArrowLandEvent;
-import main.events.MemeEvent;
-import main.events.SpearEvent;
-import main.events.blockPlace;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,9 +19,6 @@ public class Main extends JavaPlugin {
     public void registerEvents(){
         PluginManager pm = getServer().getPluginManager();
 
-        pm.registerEvents(new blockPlace(), this);
-        pm.registerEvents(new MemeEvent(), this);
-        pm.registerEvents(new SpearEvent(), this);
         pm.registerEvents(new ArrowLandEvent(), this);
     }
 
